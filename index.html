@@ -1442,16 +1442,18 @@ const SettingsPanel = ({
     className: "bg-amber-50 rounded-2xl p-4 text-left"
   }, /*#__PURE__*/React.createElement("p", {
     className: "jua fs-sm text-amber-800 leading-relaxed"
-  }, "1. 받은 시트에서 ", /*#__PURE__*/React.createElement("b", null, "[사본 만들기]"), /*#__PURE__*/React.createElement("br", null), "2. 시트 상단 ", /*#__PURE__*/React.createElement("b", null, "[👩‍🏫 선생님 메뉴 → 📲 앱 연결 안내]"), "에서 주소 복사", /*#__PURE__*/React.createElement("br", null), "3. 아래 칸에 붙여넣고 ", /*#__PURE__*/React.createElement("b", null, "[연결하기]"))), /*#__PURE__*/React.createElement("div", {
+  }, "1. 받은 시트에서 ", /*#__PURE__*/React.createElement("b", null, "[사본 만들기]"), /*#__PURE__*/React.createElement("br", null), "2. 시트 메뉴 ", /*#__PURE__*/React.createElement("b", null, "[👩‍🏫 선생님 메뉴 → 📲 앱 연결 안내]"), /*#__PURE__*/React.createElement("br", null), "\xA0\xA0\xA0→ 처음이면 ", /*#__PURE__*/React.createElement("b", null, "배포 한 번"), " 한 뒤 나오는 주소 복사", /*#__PURE__*/React.createElement("br", null), "3. 아래 칸에 붙여넣고 ", /*#__PURE__*/React.createElement("b", null, "[연결하기]"))), /*#__PURE__*/React.createElement("div", {
     className: "flex flex-col gap-2"
   }, /*#__PURE__*/React.createElement("label", {
     className: "jua fs-sm text-slate-600"
-  }, "내 시트 주소"), /*#__PURE__*/React.createElement("input", {
+  }, "앱 연결 주소 (.../exec)"), /*#__PURE__*/React.createElement("input", {
     value: url,
     onChange: e => setUrl(e.target.value),
     placeholder: "https://script.google.com/macros/.../exec",
     className: "w-full p-3 fs-sm rounded-xl border-2 border-amber-200 bg-white outline-none focus:border-amber-400 text-slate-700"
-  }), /*#__PURE__*/React.createElement("button", {
+  }), /*#__PURE__*/React.createElement("p", {
+    className: "jua fs-xs text-slate-400 leading-snug"
+  }, "※ 시트 주소(docs.google…)가 아니라 배포 주소(script.google…/exec)예요"), /*#__PURE__*/React.createElement("button", {
     onClick: connect,
     className: "py-3 bg-amber-500 hover:bg-amber-600 text-white rounded-xl jua fs-md btn-shadow"
   }, "🔗 연결하기")), saved && /*#__PURE__*/React.createElement("div", {
